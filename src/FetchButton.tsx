@@ -1,4 +1,4 @@
-import React, { ComponentPropsWithoutRef, useId, useRef } from "react";
+import React, { useId, useRef } from "react";
 import styled from "styled-components";
 import { LoadingSpinner } from "./LoadingSpinner";
 import { Tooltip } from "./Tooltip";
@@ -21,9 +21,7 @@ const ButtonContainer = styled.div`
   }
 `;
 
-const StyledButton = styled.button<
-  { state: ButtonStatesT } & ComponentPropsWithoutRef<"button">
->`
+const StyledButton = styled.button<{ state: ButtonStatesT }>`
   padding: 10px 20px;
   background-color: white;
   text-transform: capitalize;
