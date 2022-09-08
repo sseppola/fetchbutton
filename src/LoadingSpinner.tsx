@@ -1,6 +1,10 @@
-
+import styled from "styled-components";
 // TODO: make real spinner (if time)
-
-export const LoadingSpinner = () => {
-  return <span style={{backgroundColor: 'orange', color: 'white', display: 'inline-block'}}>Loading...</span>
-}
+const StyledLoadingSpinner = styled.div`
+  background-color: orange;
+  color: white;
+  display: block;
+`;
+export const LoadingSpinner = () => (
+  <StyledLoadingSpinner>Loading...</StyledLoadingSpinner>
+);
